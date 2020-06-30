@@ -52,7 +52,7 @@ spec:
   volumes:
   - name: kube-config
     hostPath:
-      path: ~/.kube
+      path: /home/edward/.kube
 """
         }
     }
