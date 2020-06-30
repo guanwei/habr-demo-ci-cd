@@ -21,7 +21,7 @@ pipeline {
 
     agent {
         kubernetes {
-            label 'jenkins-agent'
+            label 'habr-demo-deploy'
             defaultContainer 'jnlp'
             yaml """
 apiVersion: v1
