@@ -35,6 +35,13 @@ spec:
     image: alpine/git
     command: ["cat"]
     tty: true
+    env:
+    - name: http_proxy
+      value: http://185.46.212.34:10015
+    - name: https_proxy
+      value: http://185.46.212.34:10015
+    - name: no_proxy
+      value: 127.0.0.1,localhost
   - name: helm-cli
     image: ibmcom/k8s-helm:v2.6.0
     command: ["cat"]
