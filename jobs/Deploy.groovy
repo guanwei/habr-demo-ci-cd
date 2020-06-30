@@ -51,8 +51,8 @@ spec:
       mountPath: /root/.kube
   volumes:
     - name: kube-config
-    hostPath:
-      path: ~/.kube
+      hostPath:
+        path: ~/.kube
 """
         }
     }
