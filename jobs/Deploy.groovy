@@ -46,6 +46,13 @@ spec:
     image: ibmcom/k8s-helm:v2.6.0
     command: ["cat"]
     tty: true
+    volumeMounts:
+    - name: kube-config
+      mountPath: /root/.kube
+  volumes:
+    - name: kube-config
+    hostPath:
+      path: ~/.kube
 """
         }
     }
